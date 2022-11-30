@@ -1,0 +1,74 @@
+@import "../../assets/scss/colors";
+
+.select {
+    position: relative;
+
+    button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 44px;
+        padding: 0 10px;
+        border: 1px solid $gray;
+        letter-spacing: 0.32px;
+        background-color: transparent;
+        cursor: pointer;
+
+        h3 {
+            margin-right: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $dark-gray;
+        }
+
+        p {
+            margin-right: auto;
+            font-size: 16px;
+            color: $black;
+        }
+    }
+
+    ul {
+        position: absolute;
+        z-index: 2;
+        top: 64px;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0px 4px 30px #00000026;
+        background-color: $white;
+
+        li {
+            padding: 0 20px;
+            line-height: 200%;
+            transition: 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $pale-orange;
+            }
+        }
+    }
+}
+
+.active {
+    color: $white;
+    background-color: $orange;
+
+    &:hover {
+        background-color: $orange !important;
+    }
+}
+
+.overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

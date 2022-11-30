@@ -1,0 +1,44 @@
+@import "../../assets/scss/colors";
+
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $light-gray;
+
+    &:last-child {
+        border: 0;
+    }
+
+    .image {
+        width: 260px;
+        height: 160px;
+        background-color: $skeleton-gray;
+    }
+
+    .title {
+        width: 100%;
+        height: 24px;
+        margin-bottom: 10px;
+        background-color: $skeleton-gray;
+    }
+
+    .description {
+        width: 200px;
+        height: 21px;
+        margin-bottom: 10px;
+        background-color: $skeleton-gray;
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 10px;
+
+        .title {
+            width: 360px;
+        }
+    }
+}

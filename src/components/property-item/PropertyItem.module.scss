@@ -1,0 +1,52 @@
+@import "../../assets/scss/colors";
+
+.property {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $light-gray;
+
+    &:last-child {
+        border: 0;
+    }
+
+    .image {
+        width: 260px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $black;
+    }
+
+    p {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 10px;
+        font-size: 14px;
+        line-height: 21px;
+        color: $dark-gray;
+    }
+
+    h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $black;
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+}

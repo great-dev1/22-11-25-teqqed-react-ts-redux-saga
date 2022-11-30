@@ -1,0 +1,69 @@
+@import "../../assets/scss/colors";
+
+.container {
+  max-width: calc(100% - 32px);
+  margin: 0 auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 40px;
+
+  @media (min-width: 576px) {
+    padding-top: 60px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 80px;
+  }
+
+  @media (min-width: 992px) {
+    padding-top: 100px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 120px;
+  }
+}
+
+.select {
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  border-top: 1px solid $light-gray;
+  border-bottom: 1px solid $light-gray;
+  padding: 20px 0;
+  background-color: $white;
+
+  @media (min-width: 768px) {
+    width: 270px;
+  }
+}
+
+.content {
+  flex-grow: 1;
+}
